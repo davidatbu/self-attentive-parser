@@ -44,8 +44,8 @@ setuptools.setup(
     setup_requires = ["cython", "numpy"],
     install_requires = ["cython", "numpy", "nltk>=3.2"],
     extras_require={
-        "cpu": ["tensorflow>=1.11.0"],
-        "gpu": ["tensorflow-gpu>=1.11.0"],
+        "cpu": ["tensorflow>=1.11.0, <2"],
+        "gpu": ["tensorflow-gpu>=1.11.0, <2"],
         "spacy": ["spacy>=2.0.9"],
     },
 )
